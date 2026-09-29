@@ -60,7 +60,7 @@ onMounted(() => {
               <defs>
                 <mask id="mask-one" x="-50" y="-50" width="2000" height="260">
                   <rect x="-50" y="-50" width="2000" height="260" fill="white" />
-                  <text text-anchor="start" font-family="Bricolage Grotesque, Helvetica Neue, sans-serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
+                  <text text-anchor="start" font-family="Cormorant Garamond, Georgia, serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
                     <tspan x="0" y="120">Strategic positions.</tspan>
                   </text>
                 </mask>

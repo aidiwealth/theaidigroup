@@ -83,7 +83,7 @@ onMounted(() => {
             <rect x="-50" y="-50" width="2000" :height="rectHeight" fill="white" />
             <text
               text-anchor="start"
-              font-family="Bricolage Grotesque, Helvetica Neue, sans-serif"
+              font-family="Cormorant Garamond, Georgia, serif"
               font-weight="400"
               font-size="115"
               letter-spacing="-4"

@@ -1,5 +1,5 @@
 {
-  "name": "telroi-group",
+  "name": "theaidigroup",
   "private": true,
   "type": "module",
   "engines": {
@@ -14,12 +14,15 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/instrument-sans": "^5.3.0",
     "nuxt": "^3.14.0",
     "vue": "^3.5.0",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vue-tsc": "^2.2.12"
   }
 }

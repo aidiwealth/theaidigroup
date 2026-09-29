@@ -53,7 +53,7 @@ onMounted(() => {
               <defs>
                 <mask id="mask-build" x="-50" y="-50" width="2000" height="390">
                   <rect x="-50" y="-50" width="2000" height="390" fill="white" />
-                  <text text-anchor="start" font-family="Bricolage Grotesque, Helvetica Neue, sans-serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
+                  <text text-anchor="start" font-family="Cormorant Garamond, Georgia, serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
                     <tspan x="0" y="115">We build infrastructure</tspan>
                     <tspan x="0" y="245">where it matters most.</tspan>
                   </text>

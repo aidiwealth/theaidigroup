@@ -9,7 +9,7 @@ The fix takes 30 seconds:
 ```bash
 # 1. From inside your repo root, run:
 git rm -r --cached node_modules
-git rm --cached package-lock.json  # also gets out the lockfile so npm regenerates it cleanly
+# keep package-lock.json committed — App Platform builds with npm ci
 git commit -m "Remove node_modules and package-lock.json from repo"
 git push
 

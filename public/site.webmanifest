@@ -1,10 +1,10 @@
 {
-  "name": "The Telroi Group",
-  "short_name": "Telroi Group",
-  "description": "A US strategic holdings entity — owning Telroi.ai outright and holding strategic interests in independent communications, connectivity, technology, and AI businesses globally.",
+  "name": "The Aidi Group",
+  "short_name": "Aidi Group",
+  "description": "An operator-led family office that builds and backs technology, financial and hospitality businesses connecting the US and Africa.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fafafa",
+  "background_color": "#ffffff",
   "theme_color": "#0c1a2e",
   "icons": [
     {

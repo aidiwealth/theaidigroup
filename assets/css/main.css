@@ -1,25 +1,24 @@
   :root {
-    --white: #ffffff;
-    --paper: #fafafa;
-    --paper-2: #f5f5f3;
-    --ink: #111111;
-    --ink-soft: #1f1f1f;
-    --muted: #6b6b6b;
-    --muted-2: #9a9a9a;
-    --rule: rgba(17,17,17,0.08);
-    --rule-strong: rgba(17,17,17,0.20);
+    --white: var(--c-white);
+    --paper: var(--c-paper);
+    --paper-2: var(--c-paper-2);
+    --ink: var(--c-ink);
+    --ink-soft: var(--c-ink-soft);
+    --muted: var(--c-muted);
+    --muted-2: var(--c-muted-2);
+    --rule: var(--c-rule);
+    --rule-strong: var(--c-rule-strong);
 
     /* Brand colors */
-    --telroi-teal: #1c547d;
-    --telroi-cyan: #2da7c3;
-    --termii-green: #34a873;
-    --termii-blue: #2675b0;
-    --aidi-paper: #f4f1eb;
-    --aidi-ink: #0c1a2e;
+    --telroi-teal: var(--c-blue-deep);
+    --telroi-cyan: var(--c-cyan);
+    --termii-green: var(--c-green);
+    --termii-blue: var(--c-blue);
+    --aidi-ink: var(--c-navy);
 
-    --display: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif;
-    --body: 'Geist', 'Helvetica Neue', system-ui, sans-serif;
-    --mono: 'Geist Mono', 'IBM Plex Mono', monospace;
+    --display: var(--font-heading);
+    --body: var(--font-body);
+    --mono: var(--font-body);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -123,7 +122,6 @@
     margin-top: 40px;
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 48;
     font-size: clamp(26px, 3.6vw, 44px);
     line-height: 1.15;
     letter-spacing: -0.025em;
@@ -175,8 +173,8 @@
     color: var(--white);
   }
   section.block.tint-aidi {
-    background: #1a4b72;
-    color: var(--aidi-paper);
+    background: var(--c-navy-2);
+    color: var(--paper);
   }
   section.block.tint-termii {
     background: var(--termii-green);
@@ -278,7 +276,6 @@
   h2 {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 72;
     font-size: clamp(36px, 5.6vw, 76px);
     line-height: 1.0;
     letter-spacing: -0.03em;
@@ -289,7 +286,6 @@
   h2.big-headline {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 72;
     font-size: clamp(36px, 6vw, 72px);
     line-height: 0.95;
     letter-spacing: -0.035em;
@@ -371,7 +367,6 @@
   .what-item h3 {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "opsz" 24;
     font-size: 22px;
     letter-spacing: -0.015em;
     margin-bottom: 14px;
@@ -453,7 +448,6 @@
   .company-name {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "opsz" 24;
     font-size: 18px;
     letter-spacing: -0.015em;
     line-height: 1.1;
@@ -480,7 +474,7 @@
   .company-cell:hover::before { transform: scaleX(1); }
   .cell-telroi::before { background: linear-gradient(90deg, var(--telroi-teal) 0%, var(--telroi-cyan) 100%); }
   .cell-termii::before { background: linear-gradient(90deg, var(--termii-green) 0%, var(--termii-blue) 100%); }
-  .cell-siu::before { background: linear-gradient(90deg, #13B1A4 0%, #37B88E 100%); }
+  .cell-siu::before { background: linear-gradient(90deg, var(--c-teal) 0%, var(--c-green-2) 100%); }
 
   /* ============ BRAND DRAWER (slide-in detail panel) ============ */
   .drawer-overlay {
@@ -562,7 +556,6 @@
   .drawer-name {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "opsz" 96;
     font-size: clamp(40px, 5.4vw, 60px);
     letter-spacing: -0.035em;
     line-height: 1;
@@ -618,7 +611,6 @@
   .drawer-metric .m-v {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "opsz" 96;
     font-size: 30px;
     letter-spacing: -0.025em;
     line-height: 1.05;
@@ -725,7 +717,6 @@
   .stat-v {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "wdth" 100, "opsz" 96;
     font-size: clamp(36px, 6vw, 72px);
     line-height: 1;
     letter-spacing: -0.035em;
@@ -744,7 +735,6 @@
   .stat-k {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 18;
     font-size: 13px;
     letter-spacing: 0;
     text-transform: none;
@@ -776,7 +766,6 @@
   .press-title {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 72;
     font-size: clamp(40px, 5.5vw, 80px);
     line-height: 1;
     letter-spacing: -0.035em;
@@ -787,7 +776,6 @@
   .press-subtitle {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 18;
     font-size: 14px;
     line-height: 1.5;
     color: var(--muted);
@@ -824,7 +812,6 @@
   .press-featured-outlet {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "wdth" 100, "opsz" 36;
     font-size: clamp(22px, 2.4vw, 30px);
     letter-spacing: -0.02em;
     color: var(--ink);
@@ -846,7 +833,6 @@
   .press-featured-headline {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 64;
     font-size: clamp(28px, 4vw, 52px);
     line-height: 1.05;
     letter-spacing: -0.03em;
@@ -857,7 +843,6 @@
   .press-featured-excerpt {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 24;
     font-style: italic;
     font-size: clamp(16px, 1.3vw, 19px);
     line-height: 1.5;
@@ -933,7 +918,6 @@
   .press-headline {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 24;
     font-size: clamp(17px, 1.6vw, 22px);
     line-height: 1.35;
     letter-spacing: -0.015em;
@@ -942,7 +926,6 @@
   .press-outlet {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 18;
     font-size: 13px;
     color: var(--muted);
     font-style: italic;
@@ -1039,7 +1022,6 @@
   .quote-text {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 72;
     font-size: clamp(28px, 4.5vw, 56px);
     line-height: 1.15;
     letter-spacing: -0.025em;
@@ -1081,7 +1063,7 @@
     .ownership-row { grid-template-columns: 1fr; gap: 50px; }
   }
   .ownership-card {
-    background: var(--aidi-paper);
+    background: var(--paper);
     padding: 56px 44px;
     position: relative;
     overflow: hidden;
@@ -1105,7 +1087,6 @@
   .ownership-card .o-name {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "opsz" 48;
     font-size: clamp(32px, 4vw, 48px);
     letter-spacing: -0.025em;
     line-height: 1;
@@ -1230,7 +1211,6 @@
     letter-spacing: 0.02em;
     color: var(--muted);
     margin-bottom: 14px;
-    font-variation-settings: "wdth" 100, "opsz" 18;
   }
 
   /* Brand name — video-parallax SVG masked headline (matches site hero technique) */
@@ -1287,7 +1267,6 @@
   .brand-modal-tagline {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 24;
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: -0.005em;
@@ -1325,7 +1304,6 @@
   .brand-modal-metric-value {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "wdth" 100, "opsz" 48;
     font-feature-settings: "tnum" on, "lnum" on;
     font-size: clamp(22px, 3vw, 28px);
     line-height: 1.05;
@@ -1355,7 +1333,6 @@
   .brand-modal-section h4 {
     font-family: var(--display);
     font-weight: 500;
-    font-variation-settings: "wdth" 100, "opsz" 18;
     font-size: 12px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -1365,7 +1342,6 @@
   .brand-modal-section p {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 20;
     font-size: 15px;
     line-height: 1.55;
     letter-spacing: -0.005em;
@@ -1408,7 +1384,6 @@
     border-top: 1px solid var(--rule);
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 16;
     font-size: 12px;
     letter-spacing: 0;
     color: var(--muted);
@@ -1471,7 +1446,6 @@
   .footer-statement {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 72;
     font-size: clamp(32px, 4.2vw, 56px);
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -1492,7 +1466,6 @@
   .footer-contact {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 32;
     font-size: clamp(18px, 1.8vw, 22px);
     color: var(--white);
     text-decoration: none;
@@ -1520,7 +1493,6 @@
   .footer-address {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 18;
     font-size: 13px;
     line-height: 1.5;
     color: rgba(255,255,255,0.5);
@@ -1539,7 +1511,6 @@
   .footer-signature .wm {
     font-family: var(--display);
     font-weight: 600;
-    font-variation-settings: "wdth" 100, "opsz" 96;
     font-size: clamp(140px, 38vw, 520px);
     line-height: 0.82;
     letter-spacing: -0.06em;
@@ -1594,7 +1565,6 @@
   .footer-disclaimer p {
     font-family: var(--display);
     font-weight: 400;
-    font-variation-settings: "wdth" 100, "opsz" 16;
     font-size: 11px;
     line-height: 1.7;
     color: rgba(255,255,255,0.32);

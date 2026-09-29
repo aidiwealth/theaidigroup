@@ -4,6 +4,11 @@ eyebrow: Contact
 description: Contact The Aidi Group in San Jose and Lagos.
 lead: Partners, founders, clients, press and candidates can all reach us here.
 ---
+## Send us a message
+
+::intake-form{kind="contact"}
+::
+
 ## Email
 
 <SiteEmail></SiteEmail>

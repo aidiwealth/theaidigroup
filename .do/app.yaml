@@ -1,0 +1,30 @@
+# DigitalOcean App Platform spec: doctl apps create --spec .do/app.yaml
+# Pages are prerendered at build time; the Node server only answers /api/*.
+name: theaidigroup
+region: nyc
+services:
+  - name: web
+    github:
+      repo: aidiwealth/theaidigroup
+      branch: main
+      deploy_on_push: true
+    environment_slug: node-js
+    build_command: npm ci && npm run build
+    run_command: node .output/server/index.mjs
+    http_port: 8080
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    instance_count: 1
+    health_check:
+      http_path: /api/health
+    envs:
+      - { key: NODE_ENV, value: production }
+      - { key: PORT, value: "8080" }
+      - { key: NUXT_PUBLIC_TURNSTILE_SITE_KEY, value: "", scope: RUN_AND_BUILD_TIME }
+      - { key: DATABASE_URL, type: SECRET, scope: RUN_TIME }
+      - { key: DATABASE_CA, type: SECRET, scope: RUN_TIME }
+      - { key: RESEND_API_KEY, type: SECRET, scope: RUN_TIME }
+      - { key: TURNSTILE_SECRET, type: SECRET, scope: RUN_TIME }
+      - { key: FORMS_FROM, value: "The Aidi Group <website@theaidigroup.com>", scope: RUN_TIME }
+      - { key: FORMS_TO_PITCH, value: "", scope: RUN_TIME }
+      - { key: FORMS_TO_SERVICES, value: "", scope: RUN_TIME }
+      - { key: FORMS_TO_CONTACT, value: "", scope: RUN_TIME }

@@ -10,4 +10,7 @@ lead: News, milestones, founder stories and our thinking on building across the 
 
 ## Stay informed
 
-Our email updates start soon.
+Get occasional updates on our companies and our thinking.
+
+::intake-form{kind="signup"}
+::

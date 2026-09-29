@@ -12,4 +12,7 @@ lead: Company formation and compliance support for founders and businesses worki
 
 ## Request a service
 
-Our service-request form opens soon. Until then, email <SiteEmail></SiteEmail> with a short description of what you need.
+Tell us what you need and we will reply with next steps.
+
+::intake-form{kind="service"}
+::

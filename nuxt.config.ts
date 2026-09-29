@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   content: { markdown: { anchorLinks: false } },
 
-  runtimeConfig: { public: { portalLive: 'false' } },
+  runtimeConfig: { public: { portalLive: 'false', turnstileSiteKey: '' } },
 
   nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/', '/about', '/about/values', '/about/leadership', '/what-we-do', '/companies', '/back', '/host', '/services', '/insights', '/careers', '/contact', '/legal/privacy', '/legal/terms', '/legal/disclaimer'] } },
 

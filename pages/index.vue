@@ -10,6 +10,5 @@ useHead({ title: 'The Aidi Group — Operator-led family office' })
     <ThePlatform />
     <ThePress />
     <TheQuote />
-    <BrandModal />
   </div>
 </template>

@@ -6,7 +6,7 @@ lead: We build infrastructure companies, back African and diaspora talent buildi
 ---
 ## Build
 
-We found and own infrastructure companies in communications, AI and payments: [Termii](https://termii.com), [Telroi](https://telroi.ai) and Siu Telecoms (Sotel).
+We found and own infrastructure companies in communications, AI and payments: [Termii](https://termii.com), [Telroi](https://telroi.ai) and [Siu Telecoms (Sotel)](https://sotel.com).
 
 ## Back
 

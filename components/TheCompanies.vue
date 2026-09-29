@@ -1,98 +1,30 @@
 <script setup lang="ts">
-// TheCompanies.vue
-// Three operating brand cells: Telroi · Termii · Sotel.
-// Each cell is a button that opens the side modal for its brand.
-
-import { useBrandModal } from '~/composables/useBrandData'
-import type { BrandKey } from '~/composables/useBrandData'
-
-const { open } = useBrandModal()
-
-function handleOpen(brand: BrandKey) {
-  open(brand)
-}
-
-// Parallax on the section's video headline
-const stageEl = ref<HTMLElement | null>(null)
-
-onMounted(() => {
-  const stage = stageEl.value
-  if (!stage) return
-  const v = stage.querySelector('video') as HTMLVideoElement | null
-  if (v) {
-    const markLoaded = () => v.classList.add('loaded')
-    if (v.readyState >= 2) markLoaded()
-    else v.addEventListener('loadeddata', markLoaded, { once: true })
-  }
-  let ticking = false
-  function update() {
-    if (!stageEl.value) return
-    const rect = stageEl.value.getBoundingClientRect()
-    const vh = window.innerHeight
-    if (rect.bottom < -vh || rect.top > vh * 2) return
-    const elCenter = rect.top + rect.height / 2
-    const rawOffset = (elCenter - vh / 2) * -0.18
-    const maxOffset = rect.height * 0.10
-    const offset = Math.max(-maxOffset, Math.min(maxOffset, rawOffset))
-    const vid = stageEl.value.querySelector('video') as HTMLVideoElement | null
-    if (vid) vid.style.transform = `translate3d(0, ${offset}px, 0) scale(1.25)`
-    ticking = false
-  }
-  window.addEventListener('scroll', () => {
-    if (!ticking) { requestAnimationFrame(update); ticking = true }
-  }, { passive: true })
-  update()
-})
+// Home: a single row of featured companies. Full list lives on /companies.
+import { COMPANIES } from '~/composables/useCompanies'
+const featured = COMPANIES.filter((c) => c.featured)
 </script>
 
 <template>
-  <section class="block companies-section" id="companies">
+  <section class="block home-companies" id="companies">
     <div class="wrap">
-      <div class="reveal">
-        <h2 ref="stageEl" class="video-headline" aria-label="Our companies.">
-          <div class="vh-video">
-            <video autoplay loop muted playsinline>
-              <source src="https://pub-f138f42d66b748108ebf7432c7314665.r2.dev/iStock-1702872444.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="vh-mask">
-            <svg viewBox="0 0 1900 160" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
-              <defs>
-                <mask id="mask-one" x="-50" y="-50" width="2000" height="260">
-                  <rect x="-50" y="-50" width="2000" height="260" fill="white" />
-                  <text text-anchor="start" font-family="Cormorant Garamond, Georgia, serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
-                    <tspan x="0" y="120">Our companies.</tspan>
-                  </text>
-                </mask>
-              </defs>
-              <rect x="-50" y="-50" width="2000" height="260" fill="#ffffff" mask="url(#mask-one)" />
-            </svg>
-          </div>
-        </h2>
-        <p class="body-lg">
-          Termii, Telroi and Sotel are the infrastructure companies we build and hold. Each is run by its own leadership team. <NuxtLink to="/companies" class="inline-link">See all our companies ›</NuxtLink>
+      <div class="reveal hc-head">
+        <h2 class="hc-title">Our companies.</h2>
+        <p class="hc-lead">
+          We build and hold infrastructure companies, and back founders through Aidi Ventures. Each company is run by its own leadership team.
         </p>
       </div>
-
-      <div class="companies-row reveal reveal-d-1">
-        <button type="button" data-brand="telroi" class="company-cell cell-telroi" @click="handleOpen('telroi')">
-          <div class="company-mark"><BrandLogoTelroi /></div>
-          <div class="company-name">Telroi</div>
-          <div class="company-cat">Voice</div>
-        </button>
-
-        <button type="button" data-brand="termii" class="company-cell cell-termii" @click="handleOpen('termii')">
-          <div class="company-mark"><BrandLogoTermii /></div>
-          <div class="company-name">Termii</div>
-          <div class="company-cat">Messaging</div>
-        </button>
-
-        <button type="button" data-brand="sotel" class="company-cell cell-siu" @click="handleOpen('sotel')">
-          <div class="company-mark"><BrandLogoSotel /></div>
-          <div class="company-name">Sotel</div>
-          <div class="company-cat">Data &amp; Infrastructure</div>
-        </button>
-      </div>
+      <CompanyGrid :companies="featured" class="reveal reveal-d-1" />
+      <NuxtLink to="/companies" class="hc-all">See all our companies ›</NuxtLink>
     </div>
   </section>
 </template>
+
+<style scoped>
+.home-companies { background: var(--c-navy); color: #fff; }
+.hc-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+.hc-title { color: #fff; font-weight: 500; font-size: clamp(44px, 6vw, 88px); line-height: 1; letter-spacing: -.01em; }
+.hc-lead { font-size: 17px; line-height: 1.6; color: rgba(255,255,255,.8); max-width: 48ch; }
+.hc-all { display: inline-block; margin-top: 40px; font-size: 15px; color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.hc-all:focus-visible { outline: 2px solid var(--c-cyan); outline-offset: 3px; }
+@media (max-width: 880px) { .hc-head { grid-template-columns: 1fr; gap: 20px; } }
+</style>

@@ -43,28 +43,28 @@ onMounted(() => {
   <section ref="sectionEl" class="block tint-aidi" id="investors">
     <div class="wrap">
       <div class="reveal">
-        <h2 class="big-headline">The infrastructure layer<br>for the next decade.</h2>
+        <h2 class="big-headline">Built across<br>two continents.</h2>
         <p class="body-lg">
-          We back companies for the long term. We measure what matters: scale, depth, and operational reach across markets — not features or short-term wins.
+          We build and back companies across the US and Africa, and hold them for the long term.
         </p>
       </div>
 
       <div class="stats">
         <div class="stat reveal reveal-d-1">
-          <div class="stat-v"><span data-counter data-to="16">0</span><span class="unit">M+</span></div>
-          <div class="stat-k">End Customers Monthly</div>
+          <div class="stat-v"><span data-counter data-to="6">0</span></div>
+          <div class="stat-k">Companies in the group</div>
         </div>
         <div class="stat reveal reveal-d-2">
-          <div class="stat-v"><span data-counter data-to="3.5">0</span><span class="unit">B+</span></div>
-          <div class="stat-k">Transactions Processed</div>
+          <div class="stat-v"><span data-counter data-to="5">0</span></div>
+          <div class="stat-k">Pillars</div>
         </div>
         <div class="stat reveal reveal-d-3">
-          <div class="stat-v"><span data-counter data-to="70">0</span><span class="unit">+</span></div>
-          <div class="stat-k">Employees Across the Group</div>
+          <div class="stat-v"><span data-counter data-to="2">0</span></div>
+          <div class="stat-k">Offices: San Jose and Lagos</div>
         </div>
         <div class="stat reveal reveal-d-3">
-          <div class="stat-v"><span data-counter data-to="3">0</span></div>
-          <div class="stat-k">Portfolio Companies</div>
+          <div class="stat-v"><span data-counter data-to="20">0</span></div>
+          <div class="stat-k">Startups backed by Aidi Ventures</div>
         </div>
       </div>
     </div>

@@ -62,7 +62,7 @@ onMounted(() => {
 <template>
   <section class="hero">
     <div class="wrap hero-content">
-      <h1 class="name-heading" aria-label="The Telroi Group.">
+      <h1 class="name-heading" aria-label="The Aidi Group.">
         <div ref="stageEl" class="name-stage">
           <div class="name-video">
             <video ref="videoEl" autoplay loop muted playsinline>
@@ -90,7 +90,7 @@ onMounted(() => {
                     font-size="160"
                     letter-spacing="-6"
                     fill="black"
-                  >The Telroi Group.</text>
+                  >The Aidi Group.</text>
                 </mask>
               </defs>
               <rect x="0" y="0" width="1200" height="280" fill="#ffffff" mask="url(#textCutout)" />
@@ -99,10 +99,10 @@ onMounted(() => {
         </div>
       </h1>
       <p class="statement hero-fade">
-        Building AI-native infrastructure for an intelligent world.
+        Built by operators. Backed with conviction. Held for generations.
       </p>
       <p class="lead hero-fade">
-        The Telroi Group is a strategic holding company that wholly owns Telroi.ai and holds strategic interests in independent communications, connectivity, technology, and AI businesses globally.
+        We build infrastructure companies, back African and diaspora talent building for the world, give the diaspora a bridge to global wealth, host professionals and travellers, and protect it all for the next generation.
       </p>
       <a href="#what" class="signpost hero-fade">What we do</a>
     </div>

@@ -49,7 +49,7 @@ onMounted(() => {
   <section class="block companies-section" id="companies">
     <div class="wrap">
       <div class="reveal">
-        <h2 ref="stageEl" class="video-headline" aria-label="Strategic positions.">
+        <h2 ref="stageEl" class="video-headline" aria-label="Our companies.">
           <div class="vh-video">
             <video autoplay loop muted playsinline>
               <source src="https://pub-f138f42d66b748108ebf7432c7314665.r2.dev/iStock-1702872444.mp4" type="video/mp4">
@@ -61,7 +61,7 @@ onMounted(() => {
                 <mask id="mask-one" x="-50" y="-50" width="2000" height="260">
                   <rect x="-50" y="-50" width="2000" height="260" fill="white" />
                   <text text-anchor="start" font-family="Cormorant Garamond, Georgia, serif" font-weight="400" font-size="115" letter-spacing="-4" fill="black">
-                    <tspan x="0" y="120">Strategic positions.</tspan>
+                    <tspan x="0" y="120">Our companies.</tspan>
                   </text>
                 </mask>
               </defs>
@@ -70,7 +70,7 @@ onMounted(() => {
           </div>
         </h2>
         <p class="body-lg">
-          Telroi.ai is wholly-owned and operated by the Group. Termii and Sotel are independent companies operated by their own founders and leadership teams — the Group holds strategic interests, backing them with long-term capital and aligned conviction.
+          Termii, Telroi and Sotel are the infrastructure companies we build and hold. Each is run by its own leadership team. <NuxtLink to="/companies" class="inline-link">See all our companies ›</NuxtLink>
         </p>
       </div>
 

@@ -1,0 +1,7 @@
+/* Site-wide additions for The Aidi Group (loaded after main.css) */
+html { scroll-padding-top: 80px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 12px; top: -48px; z-index: 100; background: var(--c-navy); color: #fff; padding: 10px 14px; border-radius: var(--r-sm); }
+.skip-link:focus { top: 12px; }
+h1, h2, h3 { font-family: var(--font-heading); }
+.inline-link { color: var(--c-blue-deep); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }

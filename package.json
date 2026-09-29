@@ -16,6 +16,7 @@
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
     "@fontsource/instrument-sans": "^5.3.0",
+    "@nuxt/content": "^2.13.4",
     "nuxt": "^3.14.0",
     "vue": "^3.5.0",
     "vue-router": "^4.4.0"

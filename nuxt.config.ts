@@ -13,11 +13,20 @@ export default defineNuxtConfig({
     '@fontsource/instrument-sans/500.css',
     '@fontsource/instrument-sans/600.css',
     '~/assets/css/tokens.css',
-    '~/assets/css/main.css'
+    '~/assets/css/main.css',
+    '~/assets/css/site.css',
+    '~/assets/css/page.css'
   ],
 
   // Static site generation by default — deploy to Vercel / Netlify / Cloudflare Pages
   ssr: true,
+
+  modules: ['@nuxt/content'],
+  content: { markdown: { anchorLinks: false } },
+
+  runtimeConfig: { public: { portalLive: 'false' } },
+
+  nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/', '/about', '/about/values', '/about/leadership', '/what-we-do', '/companies', '/back', '/host', '/services', '/insights', '/careers', '/contact', '/legal/privacy', '/legal/terms', '/legal/disclaimer'] } },
 
   app: {
     head: {

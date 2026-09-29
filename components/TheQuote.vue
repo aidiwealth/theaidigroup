@@ -7,10 +7,10 @@
   <section class="quote">
     <div class="wrap">
       <p class="quote-text reveal">
-        We build where infrastructure matters most — because that is where the next category leaders will emerge.
+        We build and back businesses we would be proud to hand to the next generation.
       </p>
       <div class="quote-attr reveal reveal-d-2">
-        <strong>The Telroi Group</strong>&nbsp;·&nbsp;Operating Thesis
+        <strong>The Aidi Group</strong>&nbsp;·&nbsp;Our philosophy
       </div>
     </div>
   </section>

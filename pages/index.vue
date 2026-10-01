@@ -4,11 +4,12 @@ useHead({ title: 'The Aidi Group — Operator-led family office' })
 
 <template>
   <div>
-    <TheHero />
-    <TheWhatWeDo />
-    <TheCompanies />
-    <ThePlatform />
-    <ThePress />
-    <TheQuote />
+    <HomeHero />
+    <SectorMarquee />
+    <WhoWeServe />
+    <SectorFeatures />
+    <StatsBand />
+    <InsightsPress :limit="6" more />
+    <FaqSection />
   </div>
 </template>

@@ -1,0 +1,34 @@
+/* joinaidi.com design language on The Aidi Group tokens */
+.section { padding: 120px 0; }
+.section.tint { background: var(--c-paper-2); }
+.eyebrow { display: block; font-family: var(--font-body); font-size: .72rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--c-blue); margin-bottom: 20px; }
+.eyebrow.light { color: rgba(255,255,255,.6); }
+.t-display { font-family: var(--font-heading); font-size: clamp(2.4rem, 5vw, 4.8rem); font-weight: 400; line-height: 1.1; letter-spacing: -.02em; color: var(--c-navy); }
+.t-display em, .t-hero em, .t-headline em { font-style: italic; color: var(--c-blue-deep); }
+.t-headline { font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 400; line-height: 1.2; letter-spacing: -.01em; color: var(--c-navy); }
+.t-subhead { font-size: 1.05rem; font-weight: 400; line-height: 1.75; color: var(--c-ink-soft); max-width: 540px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; border-radius: 100px; font-size: .9rem; font-weight: 500; border: 1.5px solid transparent; transition: all .22s ease; white-space: nowrap; cursor: pointer; }
+.btn-dark { background: var(--c-navy); color: #fff; border-color: var(--c-navy); }
+.btn-dark:hover { background: var(--c-blue-deep); border-color: var(--c-blue-deep); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(12,26,46,.25); }
+.btn-outline { background: transparent; color: var(--c-navy); border-color: rgba(12,26,46,.25); }
+.btn-outline:hover { background: var(--c-navy); color: #fff; border-color: var(--c-navy); }
+.btn-white { background: #fff; color: var(--c-navy); border-color: #fff; }
+.btn-ghost-light { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.25); }
+.btn-ghost-light:hover { background: rgba(255,255,255,.16); }
+.btn:focus-visible { outline: 2px solid var(--c-cyan); outline-offset: 3px; }
+.btn svg { width: 14px; height: 14px; }
+@media (max-width: 880px) { .section { padding: 72px 0; } }
+
+/* Call to action: sans label + solid square arrow. Editorial variant (underlined serif) is for Insights. */
+.cta-arrow { font-family: var(--font-body); font-weight: 500; font-size: 14px; letter-spacing: .01em; color: var(--c-navy); display: inline-flex; align-items: center; gap: 14px; cursor: pointer; }
+.cta-arrow svg { box-sizing: border-box; width: 36px; height: 36px; padding: 11px; flex-shrink: 0; background: var(--c-navy); color: #fff; transition: background .2s ease, transform .2s ease; }
+.cta-arrow:hover svg, a:hover .cta-arrow svg { background: var(--c-blue); transform: translate(2px, -2px); }
+.cta-arrow.light { color: #fff; }
+.cta-arrow.light svg { background: #fff; color: var(--c-navy); }
+.cta-arrow.light:hover svg, a:hover .cta-arrow.light svg { background: var(--c-cyan); color: var(--c-navy); }
+.cta-arrow.editorial { font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: -.005em; gap: 10px; border-bottom: 1px solid currentColor; padding-bottom: 4px; transition: gap .3s ease; }
+.cta-arrow.editorial svg { width: 14px; height: 14px; padding: 0; background: none; color: currentColor; transform: none; }
+.cta-arrow.editorial:hover { gap: 14px; }
+a.cta-arrow:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .cta-arrow svg { transition: none; transform: none !important; } }
+.press-featured-cta { font-size: 1.1rem; }

@@ -15,7 +15,9 @@ export default defineNuxtConfig({
     '~/assets/css/tokens.css',
     '~/assets/css/main.css',
     '~/assets/css/site.css',
-    '~/assets/css/page.css'
+    '~/assets/css/page.css',
+    '~/assets/css/aidi.css',
+    '~/assets/css/typography.css'
   ],
 
   // Static site generation by default — deploy to Vercel / Netlify / Cloudflare Pages
@@ -26,7 +28,21 @@ export default defineNuxtConfig({
 
   runtimeConfig: { public: { portalLive: 'false', turnstileSiteKey: '' } },
 
-  nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/', '/about', '/about/values', '/about/leadership', '/what-we-do', '/companies', '/back', '/host', '/services', '/insights', '/careers', '/contact', '/legal/privacy', '/legal/terms', '/legal/disclaimer'] } },
+  routeRules: {
+    '/insights/our-y-combinator-journey': { redirect: { to: '/insights', statusCode: 301 } },
+    '/sectors': { redirect: { to: '/#sectors', statusCode: 301 } },
+    '/contact': { redirect: { to: '/', statusCode: 301 } },
+    '/services': { redirect: { to: '/', statusCode: 301 } },
+    '/legal/privacy': { redirect: { to: '/legal', statusCode: 301 } },
+    '/legal/terms': { redirect: { to: '/legal', statusCode: 301 } },
+    '/legal/disclaimer': { redirect: { to: '/legal', statusCode: 301 } },
+    '/what-we-do': { redirect: { to: '/#sectors', statusCode: 301 } },
+    '/companies': { redirect: { to: '/#sectors', statusCode: 301 } },
+    '/about/values': { redirect: { to: '/about', statusCode: 301 } },
+    '/about/leadership': { redirect: { to: '/about#team', statusCode: 301 } }
+  },
+
+  nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/', '/about', '/ethos', '/back', '/host', '/insights', '/careers', '/legal'] } },
 
   app: {
     head: {

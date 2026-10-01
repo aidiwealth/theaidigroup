@@ -1,0 +1,56 @@
+/* The Aidi Group type scale, taken from the featured Insights card. Loaded last so it wins everywhere.
+   Headline = "Our Y Combinator Journey" · Title = "Startup Guide" · Body = the excerpt · Label = "Featured · 2 min read" */
+:root {
+  --type-headline: clamp(26px, 3.2vw, 42px);
+  --type-title: clamp(18px, 1.8vw, 22px);
+  --type-body: 14px;
+  --type-label: 10px;
+}
+
+/* Headline: Cormorant Garamond 400 */
+.t-display, .t-hero, .t-headline, .page-hero h1, .press-title, h2.big-headline, .prose h2, .cta-title,
+.footer-statement, .hc-title, .tm-panel-name, .press-featured-headline {
+  font-family: var(--font-heading) !important; font-weight: 400 !important;
+  font-size: var(--type-headline) !important; line-height: 1.05 !important; letter-spacing: -0.03em !important;
+}
+
+/* Title: Cormorant Garamond 500 */
+.press-featured-outlet, .sm-name, .ws-title, .tm-name, .ab-card-title, .sf-card-value, .prose h3,
+.press-headline, .ab-quote p {
+  font-family: var(--font-heading) !important; font-weight: 500 !important;
+  font-size: var(--type-title) !important; line-height: 1.15 !important; letter-spacing: -0.02em !important;
+}
+
+/* Body: Instrument Sans */
+.t-subhead, .page-lead, .ab-p, .ab-note, .prose, .prose p, .prose li, .sm-desc, .ws-desc, .tm-bio, .faq-a, .faq-q,
+.hh-right p, .press-featured-excerpt, .press-subtitle, .body-lg, .ab-card-desc, .footer-address,
+.footer-contact {
+  font-family: var(--font-body) !important; font-size: var(--type-body) !important;
+  line-height: 1.7 !important; letter-spacing: normal !important; font-style: normal !important;
+}
+
+/* Label: Instrument Sans, small caps */
+.eyebrow, .page-eyebrow, .press-featured-meta, .press-eyebrow, .sm-tag, .ws-tag, .sf-card-label, .sf-card-note,
+.tm-panel-role, .tm-focus span, .press-date, .press-outlet, .hh-stats dd, .stat-k, .hh-badge, .ab-h, .ab-cite {
+  font-family: var(--font-body) !important; font-size: var(--type-label) !important;
+  letter-spacing: 0.14em !important; text-transform: uppercase !important; line-height: 1.4 !important;
+}
+
+/* Small supporting text (team roles), and consistent fonts for nav, links and numbers */
+.tm-role { font-family: var(--font-body) !important; font-size: 13px !important; line-height: 1.5 !important; color: var(--c-muted) !important; text-transform: none !important; letter-spacing: normal !important; }
+.site-nav-links a, .cta-arrow:not(.editorial), .footer-links a { font-family: var(--font-body) !important; font-size: 13px !important; }
+.hh-stats dt, .stat-v { font-family: var(--font-heading) !important; }
+.hh-stats dt { font-size: 1.7rem !important; }
+
+/* Flat: no rounded corners anywhere */
+:root { --r-sm: 0; --r-md: 0; --r-lg: 0; --r-pill: 0; }
+*, *::before, *::after { border-radius: 0 !important; }
+
+/* Ethos: manifesto paragraphs set in the title style */
+.prose.manifesto p { font-family: var(--font-heading) !important; font-size: var(--type-title) !important; line-height: 1.35 !important; letter-spacing: -0.01em !important; color: var(--c-navy); margin-bottom: 28px; }
+.prose.manifesto p:last-child { font-style: italic !important; color: var(--c-blue-deep); }
+.prose.manifesto > * { max-width: 760px; }
+
+/* Team cards at joinaidi scale */
+.tm .tm-name { font-size: 15px !important; font-weight: 500 !important; line-height: 1.3 !important; letter-spacing: 0 !important; }
+.tm .tm-role { font-size: 11px !important; line-height: 1.4 !important; }

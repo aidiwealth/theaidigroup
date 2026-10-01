@@ -1,4 +1,5 @@
 <script setup lang="ts">
+definePageMeta({ darkHero: true })
 const route = useRoute()
 const path = route.path.replace(/\/+$/, '') || '/'
 const { data: page } = await useAsyncData('page:' + path, () => queryContent().where({ _path: path }).findOne())
@@ -14,11 +15,6 @@ useHead({
     { property: 'og:url', content: 'https://theaidigroup.com' + path }
   ]
 })
-const about = [
-  { to: '/about', label: 'Our story' },
-  { to: '/about/values', label: 'Values and philosophy' },
-  { to: '/about/leadership', label: 'Leadership' }
-]
 </script>
 
 <template>
@@ -30,11 +26,10 @@ const about = [
         <p v-if="page.lead" class="page-lead">{{ page.lead }}</p>
       </div>
     </header>
-    <nav v-if="path.startsWith('/about')" class="wrap page-subnav" aria-label="About">
-      <NuxtLink v-for="l in about" :key="l.to" :to="l.to" exact-active-class="on">{{ l.label }}</NuxtLink>
-    </nav>
-    <div class="wrap page-body prose">
+    <div class="wrap page-body prose" :class="{ manifesto: page.manifesto }">
+      <p v-if="path.startsWith('/insights/')" class="page-back"><NuxtLink to="/insights">← All insights</NuxtLink></p>
       <ContentRenderer :value="page" />
+      <p v-if="path.startsWith('/insights/')" class="page-note">For general information only. Not investment, legal or tax advice.</p>
     </div>
   </article>
 </template>

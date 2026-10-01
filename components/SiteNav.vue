@@ -29,7 +29,7 @@ onBeforeUnmount(() => {
 <template>
   <header class="site-nav" :class="{ open, scrolled, dark }">
     <div class="wrap site-nav-inner">
-      <NuxtLink to="/" class="site-nav-logo" aria-label="The Aidi Group — home"><AidiWordmark /></NuxtLink>
+      <NuxtLink to="/" class="site-nav-logo" aria-label="The Aidi Group — home"><span class="brand-mark" aria-hidden="true"><AidiWordmark /></span><span class="brand-divider" aria-hidden="true" /><span class="brand-arm" aria-hidden="true">Group</span></NuxtLink>
       <button class="site-nav-toggle" type="button" :aria-expanded="open" aria-controls="site-menu" @click="open = !open">
         <span class="sr-only">Menu</span><span aria-hidden="true" class="bars" />
       </button>
@@ -50,7 +50,12 @@ onBeforeUnmount(() => {
 .site-nav.dark .site-nav-links a:hover, .site-nav.dark .site-nav-links a.router-link-exact-active { color: #fff; border-bottom-color: #fff; }
 .site-nav.dark .bars, .site-nav.dark .bars::before, .site-nav.dark .bars::after { background: #fff; }
 .site-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.site-nav-logo { display: block; height: 26px; width: 66px; color: var(--c-navy); }
+.site-nav-logo { display: flex; align-items: center; gap: 14px; color: var(--c-navy); }
+.brand-mark { display: flex; align-items: center; width: 62px; height: 25px; }
+.brand-mark :deep(svg) { width: 100%; height: 100%; display: block; }
+.brand-divider { width: 1px; height: 22px; background: currentColor; opacity: .25; }
+.brand-arm { font-family: var(--font-heading); font-size: 1.22rem; font-style: italic; font-weight: 400; letter-spacing: .005em; line-height: 1; color: currentColor; }
+@media (max-width: 880px) { .brand-mark { width: 54px; height: 21px; } .brand-arm { font-size: 1.08rem; } }
 .site-nav-links { display: flex; gap: 28px; font-size: 14px; }
 .site-nav-links a { color: var(--c-ink-soft); padding: 6px 0; border-bottom: 1px solid transparent; }
 .site-nav-links a:hover, .site-nav-links a.router-link-exact-active { color: var(--c-navy); border-bottom-color: var(--c-blue); }

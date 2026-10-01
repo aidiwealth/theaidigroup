@@ -43,7 +43,7 @@ export const SECTORS: Sector[] = [
     pill: 'Backing exceptional African and diaspora founders building for the world.',
     headline: 'Backing founders who build for the world.',
     body: 'Aidi Ventures invests in exceptional African and diaspora technical founders, and gives them operator support alongside capital.',
-    video: R2 + 'aidi-n2.mp4', href: 'https://aidiventures.com', cta: 'Visit aidiventures.com'
+    video: R2 + 'aidi-n2.mp4', href: 'https://aidiventures.com', cta: 'Pitch us'
   },
   {
     key: 'telroi', group: 'telecoms', sector: 'AI & Telecoms', company: 'Telroi',
@@ -75,15 +75,15 @@ export const SECTORS: Sector[] = [
     pill: 'A licensed mobile virtual network operator in Nigeria.',
     headline: 'Connectivity for a mobile-first market.',
     body: 'Siu Telecoms, trading as Sotel, is a licensed mobile virtual network operator in Nigeria, offering mobile data and eSIM connectivity.',
-    video: R2 + 'iStock-1317499354.mp4', href: 'https://sotel.com', cta: 'Visit sotel.com'
+    video: R2 + 'iStock-2154873996.mp4', href: 'https://sotel.com', cta: 'Visit sotel.com'
   },
   {
-    key: 'public-markets', group: 'markets', sector: 'Public Markets', company: 'Energy on the NGX',
+    key: 'public-markets', group: 'markets', sector: 'Public Markets', company: 'AI & Energy on the NGX or US Market',
     icon: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
-    pill: 'Long-term positions in listed African energy companies.',
-    headline: 'Long-term positions in African energy.',
-    body: 'Alongside the businesses we build, we hold long-term positions in listed energy companies on the Nigerian Exchange (NGX).',
-    video: '', href: '', cta: ''
+    pill: 'Long-term positions in listed AI and energy companies.',
+    headline: 'Long-term positions in AI & energy.',
+    body: 'Alongside the businesses we build, we hold private long-term positions in listed energy companies on the Nigerian Exchange (NGX) or US public markets.',
+    video: R2 + 'iStock-1317499354.mp4', href: '', cta: ''
   }
 ]
 

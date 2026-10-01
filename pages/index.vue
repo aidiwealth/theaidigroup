@@ -6,6 +6,7 @@ useHead({ title: 'The Aidi Group — Operator-led family office' })
   <div>
     <HomeHero />
     <SectorMarquee />
+    <LogoWall />
     <WhoWeServe />
     <SectorFeatures />
     <StatsBand />

@@ -37,7 +37,7 @@ onMounted(() => {
         <p><strong>Disclaimer:</strong> The Aidi Group is a family office. It builds, owns and backs businesses for its own account and does not manage money for outside clients. The Aidi Group is not a broker-dealer, custodian or registered investment adviser.</p>
         <p>Nothing on this site is an offer to sell, or a solicitation of an offer to buy, any security, fund interest or investment advisory service, and nothing on this site is investment, legal or tax advice.</p>
         <p>The companies named on this site, including Aidi Wealth, the Telroi Group, Aidi Ventures and Aidi Haven, are separate legal entities run by their own management teams. Each is responsible for its own products, services and regulatory obligations. References to them are for information only.</p>
-        <p>Aidi Wealth's services, and the regulatory disclosures that apply to them, are provided on joinaidi.com. Any fund managed by Aidi Ventures is offered only privately, to eligible investors, through its own offering documents.</p>
+        <p>Aidi Wealth's services, and the regulatory disclosures that apply to them, are provided on joinaidi.com.</p>
         <p>Figures on this site describe the group's companies in aggregate, are unaudited and may change. Past performance is not a guide to future results.</p>
         <p>Information on this site is for general information only. It may include material from third parties that we have not verified and may not be complete or current. Trademarks and logos belong to their respective owners.</p>
       </div>

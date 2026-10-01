@@ -30,9 +30,8 @@ function pick(key: string): void { active.value = key; expanded.value = false }
           <span class="eyebrow">{{ s.sector }} · {{ s.company }}<template v-if="s.affiliated"> · Affiliated company</template></span>
           <h3 class="t-headline">{{ s.headline }}</h3>
           <p class="t-subhead">{{ s.body }}</p>
-          <div v-if="s.href || s.group === 'investment'" class="sf-actions">
+          <div v-if="s.href" class="sf-actions">
             <ArrowLink v-if="s.href" :to="s.href" :label="s.cta" />
-            <ArrowLink v-if="s.group === 'investment'" to="/back" label="Pitch us" />
           </div>
         </div>
       </div>
@@ -52,7 +51,8 @@ function pick(key: string): void { active.value = key; expanded.value = false }
 .sf-filter:hover { border-color: var(--c-navy); }
 .sf-filter.on { background: var(--c-navy); color: #fff; border-color: var(--c-navy); }
 .sf-filter:focus-visible { outline: 2px solid var(--c-blue); outline-offset: 2px; }
-.sf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 56px; }
+.sf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin: 32px 0; padding: 72px 0; border-top: 1px solid var(--c-rule); }
+.sf-row:last-of-type { border-bottom: 1px solid var(--c-rule); }
 .sf-row.reverse .sf-visual { order: 2; }
 .sf-visual { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: linear-gradient(135deg, var(--c-blue-deep), var(--c-navy)); }
 .sf-tint { position: absolute; inset: 0; }
@@ -69,7 +69,7 @@ function pick(key: string): void { active.value = key; expanded.value = false }
 @media (max-width: 880px) {
   .sf-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
   .sf-filter { flex-shrink: 0; }
-  .sf-row { grid-template-columns: 1fr; gap: 28px; margin-top: 48px; }
+  .sf-row { grid-template-columns: 1fr; gap: 28px; margin: 16px 0; padding: 48px 0; }
   .sf-row.reverse .sf-visual { order: 0; }
 }
 </style>

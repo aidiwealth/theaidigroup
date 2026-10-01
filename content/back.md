@@ -20,5 +20,3 @@ Tell us what you are building. We read every pitch.
 
 ::intake-form{kind="pitch"}
 ::
-
-Aidi Ventures does not offer interests in any fund through this site.

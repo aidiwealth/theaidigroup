@@ -5,10 +5,10 @@ const R2 = 'https://pub-f138f42d66b748108ebf7432c7314665.r2.dev/'
 export interface Member { id: string; name: string; role: string; photo: string; bio: string; focus: string }
 
 export const TEAM: Member[] = [
-  { id: 'emmanuel', name: 'Emmanuel Gbolade', role: 'Founding Partner', photo: R2 + 'emma-1.png',
+  { id: 'emmanuel', name: 'Emmanuel Gbolade', role: 'Founder', photo: R2 + 'emma-1.png',
     bio: 'Emmanuel leads the group\'s overall vision across infrastructure, capital strategy, and global expansion. As a founder and operator building across Silicon Valley and emerging markets, he brings deep experience in scaling technology platforms and structuring cross-border financial systems for institutions and families.',
     focus: 'Business Strategy · Venture & Capital Markets' },
-  { id: 'deborah', name: 'Deborah Gbolade', role: 'Founding Partner & Managing Director', photo: R2 + 'may-1.png',
+  { id: 'deborah', name: 'Deborah Gbolade', role: 'Founder & Managing Director', photo: R2 + 'may-1.png',
     bio: 'Deborah leads Aidi as Managing Partner, overseeing the firm\'s strategic direction across wealth management, venture advisory, and product development. With deep roots in both Silicon Valley and emerging markets, she brings a unique perspective on cross-border wealth creation for global professionals and families.',
     focus: 'Strategy · Wealth Management · Operations' },
   { id: 'kayode', name: 'Olukayode (Kayode) Afolabi', role: 'General Partner, Aidi Ventures', photo: R2 + 'IMG_6083.jpeg',

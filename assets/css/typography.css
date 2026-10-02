@@ -54,3 +54,7 @@
 /* Team cards at joinaidi scale */
 .tm .tm-name { font-size: 15px !important; font-weight: 500 !important; line-height: 1.3 !important; letter-spacing: 0 !important; }
 .tm .tm-role { font-size: 11px !important; line-height: 1.4 !important; }
+
+/* WCAG AA contrast fixes */
+.sm-pill:not(:hover):not(:focus-visible) .sm-tag { color: #4a4a4a; }
+section.block.stats-band .stat-k { color: rgba(255,255,255,.85) !important; }

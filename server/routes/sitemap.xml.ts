@@ -2,7 +2,7 @@ import { serverQueryContent } from '#content/server'
 
 // Sitemap: main pages plus every Insights article. Prerendered at build time.
 const SITE = 'https://theaidigroup.com'
-const PAGES = ['/', '/about', '/ethos', '/back', '/host', '/insights', '/careers', '/legal']
+const PAGES = ['/', '/about', '/ethos', '/host', '/insights', '/careers', '/legal']
 
 export default defineEventHandler(async (event) => {
   const docs = await serverQueryContent(event).only(['_path']).find()

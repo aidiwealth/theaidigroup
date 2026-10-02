@@ -9,7 +9,7 @@ export const FAQ: { q: string; a: string }[] = [
   { q: 'How are the companies run?',
     a: 'Each company has its own leadership team. The group provides long-term capital, operating experience and shared support.' },
   { q: 'How do I pitch Aidi Ventures?',
-    a: 'Use the pitch form on our Aidi Ventures page. We read every pitch and reply when there is a fit.' },
+    a: 'Visit aidiventures.com to pitch Aidi Ventures. The team reads every pitch and replies when there is a fit.' },
   { q: 'How do I book a stay with Aidi Haven?',
     a: 'Visit aidihaven.com to see homes and book a stay.' },
   { q: 'Where are you based?',

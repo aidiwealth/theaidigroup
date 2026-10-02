@@ -5,7 +5,7 @@ export interface Audience { tag: string; title: string; desc: string; video: str
 
 export const AUDIENCES: Audience[] = [
   { tag: 'Aidi Ventures', title: 'Founders building for the world', video: R2 + 'iStock-1702872444.mp4',
-    desc: 'We back African and diaspora technical founders with capital and operator support.', href: '/back', link: 'Pitch us' },
+    desc: 'We back African and diaspora technical founders with capital and operator support.', href: 'https://aidiventures.com', link: 'Pitch us' },
   { tag: 'Aidi Wealth', title: 'Families building wealth across borders', video: R2 + 'iStock-2157298522.mp4',
     desc: 'Aidi Wealth gives diaspora and Nigerian families access to global markets.', href: 'https://joinaidi.com', link: 'Visit joinaidi.com' },
   { tag: 'Aidi Haven', title: 'Diaspora travellers and professionals', video: R2 + 'aidihaven%20(1).mp4',

@@ -46,6 +46,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/insights/our-y-combinator-journey': { redirect: { to: '/insights', statusCode: 301 } },
+    '/back': { redirect: { to: 'https://aidiventures.com', statusCode: 301 } },
     '/sectors': { redirect: { to: '/#sectors', statusCode: 301 } },
     '/contact': { redirect: { to: '/', statusCode: 301 } },
     '/services': { redirect: { to: '/', statusCode: 301 } },
@@ -58,7 +59,7 @@ export default defineNuxtConfig({
     '/about/leadership': { redirect: { to: '/about#team', statusCode: 301 } }
   },
 
-  nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/sitemap.xml', '/', '/about', '/ethos', '/back', '/host', '/insights', '/careers', '/legal'] } },
+  nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/sitemap.xml', '/', '/about', '/ethos', '/host', '/insights', '/careers', '/legal'] } },
 
   app: {
     head: {

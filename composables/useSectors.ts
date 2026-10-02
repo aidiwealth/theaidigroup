@@ -43,7 +43,7 @@ export const SECTORS: Sector[] = [
     pill: 'Backing exceptional African and diaspora founders building for the world.',
     headline: 'Backing founders who build for the world.',
     body: 'Aidi Ventures invests in exceptional African and diaspora technical founders, and gives them operator support alongside capital.',
-    video: R2 + 'aidi-n2.mp4', href: 'https://aidiventures.com/pitch', cta: 'Pitch us'
+    video: R2 + 'aidi-n2.mp4', href: 'https://aidiventures.com', cta: 'Visit aidiventures.com'
   },
   {
     key: 'telroi', group: 'telecoms', sector: 'AI & Telecoms', company: 'Telroi',

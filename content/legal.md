@@ -28,7 +28,7 @@ You may view and download Materials for your own personal use. You may not copy,
 We review many business plans, and many are similar. Unless we agree in writing, we cannot accept an obligation to keep the plans or materials you send us confidential. Please consider this before sending anything you regard as confidential.
 
 ### Privacy
-We collect the information you send us through our forms or by email, such as your name, email address and message, and use it only to reply to you and handle your request. We do not sell it. Our site uses privacy-friendly analytics with no advertising cookies. Depending on where you live, including under US state law, the Nigeria Data Protection Act and UK data protection law, you may ask to see, correct or delete your information by emailing <SiteEmail></SiteEmail>.
+We collect the information you send us through our forms or by email, such as your name, email address and message, and use it only to reply to you and handle your request. We do not sell it. Our site does not use analytics or advertising cookies. Depending on where you live, including under US state law, the Nigeria Data Protection Act and UK data protection law, you may ask to see, correct or delete your information by emailing <SiteEmail></SiteEmail>.
 
 ### Limitation of liability
 To the fullest extent permitted by law, no company or person in The Aidi Group is liable for any loss arising from your use of, or reliance on, this Website or the Materials.

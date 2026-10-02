@@ -46,7 +46,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/insights/our-y-combinator-journey': { redirect: { to: '/insights', statusCode: 301 } },
-    '/back': { redirect: { to: 'https://aidiventures.com', statusCode: 301 } },
+    '/back': { redirect: { to: 'https://aidiventures.com/pitch', statusCode: 301 } },
     '/sectors': { redirect: { to: '/#sectors', statusCode: 301 } },
     '/contact': { redirect: { to: '/', statusCode: 301 } },
     '/services': { redirect: { to: '/', statusCode: 301 } },

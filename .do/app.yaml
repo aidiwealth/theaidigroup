@@ -12,6 +12,21 @@ domains:
     type: PRIMARY
   - domain: www.theaidigroup.com
     type: ALIAS
+ingress:
+  rules:
+    - match:
+        authority:
+          exact: www.theaidigroup.com
+        path:
+          prefix: /
+      redirect:
+        authority: theaidigroup.com
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /
+      component:
+        name: web
 services:
   - name: web
     github:

@@ -2,7 +2,7 @@
 export default defineAppConfig({
   site: {
     legalName: 'The Aidi Group',
-    email: 'hello@theaidigroup.com',
+    email: 'partners@theaidigroup.com',
     address: '6472 Camden Ave, Suite 204, San Jose, CA 95120, US'
   }
 })

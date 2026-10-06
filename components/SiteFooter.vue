@@ -29,6 +29,7 @@ onMounted(() => {
           <NuxtLink to="/insights">Insights</NuxtLink>
           <NuxtLink to="/careers">Careers</NuxtLink>
           <NuxtLink to="/legal">Legal</NuxtLink>
+          <NuxtLink to="/aml-policy">AML Policy</NuxtLink>
         </nav>
       </div>
     </div>

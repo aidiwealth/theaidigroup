@@ -15,5 +15,5 @@ export const FAQ: { q: string; a: string }[] = [
   { q: 'Where are you based?',
     a: 'We work from San Jose, California and Lagos, Nigeria.' },
   { q: 'How do I partner with you?',
-    a: 'Email hello@theaidigroup.com and tell us what you have in mind. The right person will reply.' }
+    a: 'Email partners@theaidigroup.com and tell us what you have in mind. The right person will reply.' }
 ]

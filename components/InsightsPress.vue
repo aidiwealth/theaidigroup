@@ -4,9 +4,11 @@ const props = withDefaults(defineProps<{ limit?: number; eyebrow?: string; title
   limit: 0, eyebrow: 'Selected writing', title: 'Insights.', more: false,
   subtitle: 'Perspectives on startups, investing, AI and building wealth across borders — from the Group and its founders.'
 })
+const API = 'https://app.theaidigroup.com'
 const { data } = await useAsyncData('insights-list', () =>
-  queryContent('insights').where({ _path: { $ne: '/insights' } })
-    .only(['_path', 'title', 'description', 'tag', 'readingTime', 'order']).sort({ order: 1 }).find())
+  $fetch<{ posts: { path: string; title: string; description: string | null; tag: string | null; readingTime: number }[] }>(API + '/api/public/blog')
+    .then((r) => r.posts.map((x) => ({ _path: x.path, title: x.title, description: x.description ?? '', tag: x.tag ?? 'Insights', readingTime: x.readingTime })))
+    .catch(() => []))
 const items = computed<Item[]>(() => (data.value || []) as unknown as Item[])
 const featured = computed(() => items.value[0])
 const list = computed(() => props.limit ? items.value.slice(1, props.limit) : items.value.slice(1))

@@ -13,7 +13,7 @@ The Aidi Group is the name we use for a group of separate companies, including A
 The Materials are provided "as is" for general information. We make no promise that they are accurate, complete or current, and they may include information from third parties that we have not verified. We may be bound by confidentiality obligations to investors, companies and partners, which can limit what we are able to say.
 
 ### No offer, solicitation or advice
-Nothing on this Website is an offer to sell, or a solicitation of an offer to buy, any security, fund interest or investment advisory service. Nothing here is investment, legal, tax or accounting advice, or a basis for any investment decision. Past performance is not a guide to future results. Aidi Wealth provides its services and regulatory disclosures on joinaidi.com.
+Nothing on this Website is an offer to sell, or a solicitation of an offer to buy, any security, fund interest or investment advisory service. Nothing here is investment, legal, tax or accounting advice, or a basis for any investment decision. Past performance is not a guide to future results. Aidi Wealth provides its services and regulatory disclosures on aidiwealth.com.
 
 ### Our companies
 Companies named on this Website are independent businesses run by their own management teams. References to them are for information and are not a complete list of the group's holdings.

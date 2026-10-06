@@ -34,8 +34,8 @@ export const SECTORS: Sector[] = [
     icon: '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
     pill: 'Cross-border wealth access for the African diaspora and Nigerians.',
     headline: 'Wealth access, across borders.',
-    body: 'Aidi Wealth helps the African diaspora in the US and Nigerians reach global markets from one AI-guided platform. Its services and disclosures live on joinaidi.com.',
-    video: R2 + 'iStock-1319885802.mp4', href: 'https://joinaidi.com', cta: 'Visit joinaidi.com'
+    body: 'Aidi Wealth helps the African diaspora in the US and Nigerians reach global markets from one AI-guided platform. Its services and disclosures live on aidiwealth.com.',
+    video: R2 + 'iStock-1319885802.mp4', href: 'https://aidiwealth.com', cta: 'Visit aidiwealth.com'
   },
   {
     key: 'aidi-ventures', group: 'investment', sector: 'Investment', company: 'Aidi Ventures',

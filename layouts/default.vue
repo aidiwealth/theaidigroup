@@ -9,7 +9,7 @@ const ORG = {
   description: 'An operator-led family office that builds and backs businesses in fintech, AI and telecoms, investment and real estate, connecting the US and Africa.',
   address: { '@type': 'PostalAddress', streetAddress: '6472 Camden Ave, Suite 204', addressLocality: 'San Jose', addressRegion: 'CA', postalCode: '95120', addressCountry: 'US' },
   subOrganization: [
-    { '@type': 'Organization', name: 'Aidi Wealth', url: 'https://joinaidi.com' },
+    { '@type': 'Organization', name: 'Aidi Wealth', url: 'https://aidiwealth.com' },
     { '@type': 'Organization', name: 'Aidi Ventures', url: 'https://aidiventures.com' },
     { '@type': 'Organization', name: 'Aidi Haven', url: 'https://aidihaven.com' },
     { '@type': 'Organization', name: 'Telroi', url: 'https://telroi.ai' }

@@ -3,7 +3,7 @@
 const STATS = [
   { to: 16, decimals: 0, unit: 'M+', label: 'End customers served monthly by our companies' },
   { to: 3.5, decimals: 1, unit: 'B+', label: 'Transactions processed across the group' },
-  { to: 20, decimals: 0, unit: '+', label: 'Startups backed by Aidi Ventures' },
+  { to: 100, decimals: 0, unit: '+', label: 'Ventures backed by Aidi Ventures' },
   { to: 70, decimals: 0, unit: '+', label: 'People across the group' }
 ]
 const sectionEl = ref<HTMLElement | null>(null)

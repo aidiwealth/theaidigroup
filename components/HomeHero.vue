@@ -15,7 +15,7 @@ import { HERO_VIDEOS } from '~/composables/useSectors'
         <p>The Aidi Group builds and backs businesses in fintech, AI and telecoms, investment and real estate, connecting the US and Africa, and holds them for the long term.</p>
         <dl class="hh-stats">
           <div><dt>4</dt><dd>Countries</dd></div>
-          <div><dt>$750M+</dt><dd>Raised by portfolio from investors</dd></div>
+          <div><dt>100+</dt><dd>Ventures backed and supported</dd></div>
         </dl>
       </div>
     </div>
